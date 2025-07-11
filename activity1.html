@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week -1 | survey </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+         :root {
+            --accent: #26de81;
+            --dark-bg: #1c1c1c;
+            --light-bg: #f5f5f5;
+            --overlay-bg: rgba(0, 0, 0, 0.6);
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Lora', serif;
+            background-image: url('back.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #080808;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            color: var(--accent);
+            background: var(--dark-bg);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .photo {
+            position: relative;
+            width: 250px;
+            height: 180px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 1%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        li h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        
+        tr {
+            background-color: #f9f9f9;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        td b {
+            color: #333;
+        }
+        
+        td p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        td:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            margin: 10px 10px;
+        }
+        /* Modal Styles */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-height: 90vh;
+            overflow: auto;
+            background-color: #000;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Week - 1</h1>
+    <p style="text-align: center;"><b style="color: var(--accent);">(from 15-05-2025 to 18-05-2025)</b></p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Objective of the Activity Done: survey on the range of awareness of health and hygiene</th>
+
+            </tr>
+        </thead>
+
+        <tr>
+            <td style="text-align: center;"> <b>Detailed Report:</b> </td>
+
+
+        </tr>
+        <tr>
+            <td><b>Day 1:</b> Went to sachivalayam. For getting permission to “Community Service Project”. Took permission from MRO.
+                <div class="gallery">
+                    <div class="photo" onclick="openModal('11.jpeg')">
+                        <img src="11.jpeg" alt="Nature Bliss">
+                    </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td><b>Day 2:</b> I continued the survey on the second day and as part of my survey I focused on the following:<br>
+                <b>•	 Awareness of the various diseases that are very common nowadays. </b><br>
+                <b>•	 Questioned about the government plans on maintaining good health and doctor support.</b> <br>
+                <b>•	Questioned about the various measures taken by the people to maintain their health Gathered information on the persons daily routine.</b>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><b>Day 3:</b> Based on my survey and the information gathered by me I found that some people are not taking even basic measures such as daily walk, yoga, gym, exercises in their daily routine to maintain their health properly I observed that
+                many people are not aware of the various plans provided by government to maintain an individual’s health.
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Day 4:</b>: continued my awareness program in the area and did the following in the things in it and the people of area received them willingly
+                <b>•	We gave a few suggestions about the present environment and its status. </b><br>
+                <b>•	We explained what good habits are in maintaining good health. </b><br>
+                <b>•	We explained health and habits.</b><br>
+                <b>•	Suggested a daily routine which includes various habits in maintaining health. </b><br>
+                <b>•	We gave basic ideas about personal hygiene in maintaining proper health</b>
+                <div class="photo" onclick="openModal('week.1.jpeg')">
+                    <img src="week.1.jpeg" alt="Urban Vibes">
+                </div>
+
+            </td>
+        </tr>
+        </span>
+
+
+
+        </tbody>
+    </table>
+
+
+
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Expanded View">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modal-img').src = imageSrc;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

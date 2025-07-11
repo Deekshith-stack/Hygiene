@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week -2 | Face Mask</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+         :root {
+            --accent: #26de81;
+            --dark-bg: #1c1c1c;
+            --light-bg: #f5f5f5;
+            --overlay-bg: rgba(0, 0, 0, 0.6);
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Lora', serif;
+            background-image: url('back.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            color: var(--accent);
+            background: var(--dark-bg);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .photo {
+            position: relative;
+            width: 250px;
+            height: 180px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+        
+        .content {
+            background-color: rgba(28, 28, 28, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 900px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: var(--overlay-bg);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-height: 90vh;
+            overflow: auto;
+            background-color: #000;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        p strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Week - 2</h1>
+    <p style="text-align: center;"><b style="color: white;">(from 20-05-2025 to 25-05-2025)</b></p>
+    <h2>The Face Mask Camping</h2>
+    <section class="content">
+        <p>The face mask has become one of the essential accessories as they are used as the most efficient strategy of precautionary measures to curb covid-19 transmission. Last year, many people thought it would be a temporary phase and won't have to wear
+            face masks after things get better. But little did they know that they would have to wear masks as they wear clothes every day. Face masks have mandatory become a necessity, and maintaining the hygiene of the face masks has also become equally
+            important for health. </p><br>
+        <div class="gallery">
+            <div class="photo" onclick="openModal('week12 (1).jpeg')">
+                <img src="week12 (1).jpeg" alt="Nature Bliss">
+            </div>
+
+    </section>
+
+    <section class="content">
+        <p>The face mask has become one of the essential accessories as they are used as the most efficient strategy of precautionary measures to curb covid-19 transmission. Last year, many people thought it would be a temporary phase and won't have to wear
+            face masks after things get better. But little did they know that they would have to wear masks as they wear clothes every day. Face masks have mandatory become a necessity, and maintaining the hygiene of the face masks has also become equally
+            important for health. </p>
+
+        <div class="photo" onclick="openModal('week12 (2).jpeg')">
+            <img src="week12 (2).jpeg" alt="Urban Vibes">
+        </div>
+
+
+    </section>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Expanded View">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modal-img').src = imageSrc;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
